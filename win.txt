@@ -1,0 +1,2 @@
+Game won, no more cards in deck.
+Cards left: 0

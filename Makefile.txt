@@ -1,0 +1,17 @@
+CC = gcc
+
+pstatistics: pstatistics.o patience.o histogram.o
+	$(CC) -o pstatistics pstatistics.o patience.o histogram.o -lgsl -lgslcblas -lm
+
+histogram.o: histogram.c histogram.h
+	$(CC) -c histogram.c
+
+patience.o:  patience.c patience.h
+	$(CC) -c patience.c
+
+pstatistics.o: pstatistics.c patience.h
+	$(CC) -c pstatistics.c
+
+clean:
+	rm -f pstatistics.o patience.o histogram.o
+	rm -f pstatistics

@@ -1,0 +1,2 @@
+Game lost, no more possible moves with cards still unplayed in deck.
+Cards left: 41
